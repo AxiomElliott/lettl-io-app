@@ -1,0 +1,62 @@
+.bannercontainer {
+  padding-top: 3em;
+}
+
+.banner {
+  font-family: 'Bitter', Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  display: inline;
+}
+
+.nav a{
+  padding-right: 1em;
+  color:black;
+}
+
+.nav {
+  font-size: 1em;
+  font-family: 'Raleway';
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 3em;
+}
+
+.huechange {
+  -webkit-animation: hue 115s infinite linear;
+}
+
+.huechange:hover {
+  -webkit-animation: hue 3s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+@media only screen and (max-device-width: 640px) {
+	.bannercontainer {
+    padding-top: 2em;
+  }
+
+  .banner {
+    font-size: 2em;
+    display:block;
+    text-align: center;
+  }
+
+  .nav {
+    font-size: 1.3em;
+    padding-bottom: 2em;
+    text-align: center;
+  }
+
+  .nav a {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}

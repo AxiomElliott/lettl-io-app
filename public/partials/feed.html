@@ -1,0 +1,14 @@
+<h1 class="heading" ng-rainbow>Feed</h1>
+<div ng-blogfilters></div>
+<div class="content">
+<!-- <p>This is my personal and professional feed. It is a collection of my life events and experiences drawn from my online presence. I've included a bunch of filters on the sidebar, viewing my collection of selfies is only a button click away!</p> -->
+<div ng-controller="feedlistController">
+  <div ng-repeat="feed in feedlist">
+    <p>
+      <span onclick="console.log('hello')" class="listitemtitle">{{feed.title}}</span></br>
+      <span class="listitemsubtitle">{{feed.date}}</span>
+    </p>
+  </div>
+</div>
+<div ng-blogview></div>
+</div>
