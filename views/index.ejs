@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Website for Elliott Thompson">
+    <meta name="author" content="Elliott Thompson">
+    <base href="/">
+    <title>Elliott Thompson</title>
+
+
+    <!-- build:css -->
+    <link rel="stylesheet" href="/css/banner.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- endbuild -->
+
+    <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div ng-include="'/partials/banner.html'"></div>
+    <div ng-view></div>
+    <div class="footer">&#169; 2015 Elliott Thompson, unless otherwise noted</div>
+
+        <!-- build:js -->
+        <script src="/js/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="/js/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/js/vendor/angular/angular.min.js"></script>
+        <script src="/js/vendor/angular-route/angular-route.min.js"></script>
+        <script src="/js/banner.js"></script>
+        <script src="/js/main.js"></script>
+        <!-- endbuild -->
+
   </body>
 </html>

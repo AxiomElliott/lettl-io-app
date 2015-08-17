@@ -5,6 +5,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var mongoose = require('mongoose');
+require('./models/FeedItem');
+mongoose.connect('mongodb://localhost/lettl-io');
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
